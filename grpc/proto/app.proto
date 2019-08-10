@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package pb;
+
+service Application {
+  rpc GetApps (google.protobuf.Empty) returns (Apps) {}
+}
+
+message App {
+  int64 id = 1;
+  string description = 2;
+}
+
+message Apps {
+    repeated App items = 1;
+}

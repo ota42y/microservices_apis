@@ -1,0 +1,47 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  version: 0.1.0
+paths:
+  "/apps":
+    post:
+      requestBody:
+        content:
+          'application/json':
+            schema:
+              "$ref": '#/components/schemas/app'
+      responses:
+        '200':
+          "$ref": '#/components/responses/appResponse'
+
+  "/apps/{id}":
+    parameters: 
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+    get:
+      responses:
+        '200':
+          "$ref": '#/components/responses/appResponse'
+    delete:
+      responses:
+        '204':
+          description: delete app
+  
+components:
+  schemas:
+    app:
+      type: object
+      description: application data
+      properties:
+        id:
+          type: integer
+  responses:
+    appResponse:
+      description: get selected app
+      content:
+        'application/json':
+          schema: 
+            "$ref": '#/components/schemas/app'

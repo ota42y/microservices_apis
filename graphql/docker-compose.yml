@@ -1,0 +1,12 @@
+version: '3'
+services:
+  graphql:
+    build:
+      context: ./ 
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/app
+    working_dir: /app
+    ports:
+      - 14567:4567
+    command: ["ruby", "app.rb"]
