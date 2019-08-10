@@ -1,7 +1,7 @@
 # Microservices API sample repository
 
 ## OpenAPI 3
-Go to [This definition's Swagger Editor] (https://editor.swagger.io/?url=https://raw.githubusercontent.com/ota42y/microservices_apis/master/openapi/openapi.yaml)
+Go to [This definition's Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/ota42y/microservices_apis/master/openapi/openapi.yaml)
 
 ## gRPC usage
 
