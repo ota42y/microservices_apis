@@ -1,5 +1,8 @@
 # Microservices API sample repository
 
+This is sample repository.
+I don't meintenance for working with the latest libraries.
+
 ## OpenAPI 3
 Go to [This definition's Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/ota42y/microservices_apis/master/openapi/openapi.yaml)
 
